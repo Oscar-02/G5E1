@@ -1,0 +1,11 @@
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\bin\Debug\G5E1.exe.config
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\bin\Debug\G5E1.exe
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\bin\Debug\G5E1.pdb
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.csprojAssemblyReference.cache
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.Form1.resources
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.Properties.Resources.resources
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.csproj.GenerateResource.cache
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.csproj.CoreCompileInputs.cache
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.exe
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.pdb
+C:\Users\oscar\Desktop\U - CICLO I\PE LAB\GUIA 5\G5E1\G5E1\obj\Debug\G5E1.Form2.resources
