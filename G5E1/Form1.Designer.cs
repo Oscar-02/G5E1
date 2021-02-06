@@ -29,6 +29,7 @@ namespace G5E1
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.program_label = new System.Windows.Forms.Label();
             this.name_Box = new System.Windows.Forms.TextBox();
             this.salary_Box = new System.Windows.Forms.TextBox();
@@ -40,6 +41,9 @@ namespace G5E1
             this.exit_Button = new System.Windows.Forms.Button();
             this.code_Button = new System.Windows.Forms.Button();
             this.usd_Label = new System.Windows.Forms.Label();
+            this.name_Tip = new System.Windows.Forms.ToolTip(this.components);
+            this.salary_Tip = new System.Windows.Forms.ToolTip(this.components);
+            this.job_Tip = new System.Windows.Forms.ToolTip(this.components);
             this.SuspendLayout();
             // 
             // program_label
@@ -87,6 +91,7 @@ namespace G5E1
             // name_Label
             // 
             this.name_Label.AutoSize = true;
+            this.name_Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.name_Label.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.name_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.name_Label.Location = new System.Drawing.Point(71, 74);
@@ -94,10 +99,12 @@ namespace G5E1
             this.name_Label.Size = new System.Drawing.Size(62, 18);
             this.name_Label.TabIndex = 4;
             this.name_Label.Text = "Nombre";
+            this.name_Label.Click += new System.EventHandler(this.name_Label_Click);
             // 
             // salary_Label
             // 
             this.salary_Label.AutoSize = true;
+            this.salary_Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.salary_Label.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.salary_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.salary_Label.Location = new System.Drawing.Point(78, 110);
@@ -105,10 +112,12 @@ namespace G5E1
             this.salary_Label.Size = new System.Drawing.Size(55, 18);
             this.salary_Label.TabIndex = 5;
             this.salary_Label.Text = "Salario";
+            this.salary_Label.Click += new System.EventHandler(this.salary_Label_Click);
             // 
             // job_Label
             // 
             this.job_Label.AutoSize = true;
+            this.job_Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.job_Label.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.job_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.job_Label.Location = new System.Drawing.Point(12, 146);
@@ -116,6 +125,7 @@ namespace G5E1
             this.job_Label.Size = new System.Drawing.Size(121, 18);
             this.job_Label.TabIndex = 6;
             this.job_Label.Text = "Posicion Laboral";
+            this.job_Label.Click += new System.EventHandler(this.job_Label_Click);
             // 
             // calculate_Button
             // 
@@ -151,6 +161,7 @@ namespace G5E1
             // usd_Label
             // 
             this.usd_Label.AutoSize = true;
+            this.usd_Label.Cursor = System.Windows.Forms.Cursors.Hand;
             this.usd_Label.Font = new System.Drawing.Font("Roboto", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.usd_Label.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.usd_Label.Location = new System.Drawing.Point(226, 110);
@@ -159,6 +170,21 @@ namespace G5E1
             this.usd_Label.TabIndex = 12;
             this.usd_Label.Text = "$ USD";
             this.usd_Label.Click += new System.EventHandler(this.usd_Label_Click);
+            // 
+            // name_Tip
+            // 
+            this.name_Tip.IsBalloon = true;
+            this.name_Tip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // salary_Tip
+            // 
+            this.salary_Tip.IsBalloon = true;
+            this.salary_Tip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
+            // 
+            // job_Tip
+            // 
+            this.job_Tip.IsBalloon = true;
+            this.job_Tip.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
             // Form1
             // 
@@ -198,6 +224,9 @@ namespace G5E1
         private System.Windows.Forms.Button exit_Button;
         private System.Windows.Forms.Button code_Button;
         private System.Windows.Forms.Label usd_Label;
+        private System.Windows.Forms.ToolTip name_Tip;
+        private System.Windows.Forms.ToolTip salary_Tip;
+        private System.Windows.Forms.ToolTip job_Tip;
     }
 }
 

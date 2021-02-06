@@ -19,6 +19,12 @@ namespace G5E1
         public Form1()
         {
             InitializeComponent();
+            name_Tip.SetToolTip(name_Label, "Aqui escribe el nombre del empleado");
+            name_Tip.ToolTipTitle = "Casilla Nombre";
+            salary_Tip.SetToolTip(salary_Label, "Aqui escriba el salario del empleado (debe ser en $USD");
+            salary_Tip.ToolTipTitle = "Casilla Salario Base";
+            job_Tip.SetToolTip(job_Label, "Seleccione correctamente el puesto de la persona");
+            job_Tip.ToolTipTitle = "Casilla Puesto Laboral";
         }
 
         private void calculate_Button_Click(object sender, EventArgs e)
@@ -60,6 +66,21 @@ namespace G5E1
         private void name_Box_TextChanged(object sender, EventArgs e)
         {
             name = name_Box.Text;
+        }
+
+        private void name_Label_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void salary_Label_Click(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void job_Label_Click(object sender, EventArgs e)
+        {
+
         }
 
         private void salary_Box_TextChanged(object sender, EventArgs e)
