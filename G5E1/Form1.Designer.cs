@@ -79,12 +79,13 @@ namespace G5E1
             this.job_Combo.FlatStyle = System.Windows.Forms.FlatStyle.System;
             this.job_Combo.FormattingEnabled = true;
             this.job_Combo.Items.AddRange(new object[] {
+            "-Seleccione una opcion-",
             "Gerente",
             "Subgerente",
             "Secretaria"});
             this.job_Combo.Location = new System.Drawing.Point(139, 146);
             this.job_Combo.Name = "job_Combo";
-            this.job_Combo.Size = new System.Drawing.Size(115, 21);
+            this.job_Combo.Size = new System.Drawing.Size(136, 21);
             this.job_Combo.TabIndex = 3;
             this.job_Combo.SelectedIndexChanged += new System.EventHandler(this.job_Combo_SelectedIndexChanged);
             // 

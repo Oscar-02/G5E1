@@ -12,6 +12,22 @@ namespace G5E1
 {
     public partial class Form1 : Form
     {
+        /*
+         * EJERCICIO 1 GUIA 5
+         * PROGRAMACION ESTRUCTURADA
+         * 
+         * OSCAR ROLANDO CAÑAS VALDIZON
+         */
+
+        /*
+         * EJERCICIO 2 GUIA 5
+         * PROGRAMACION ESTRUCTURADA
+         * 
+         * NOTA. Revisar lineas "87 a 94" y lineas "119 a 126"
+         * 
+         * OSCAR ROLANDO CAÑAS VALDIZON
+         */
+
         string name;
         double salary_base, salary, discount;
         int job;
@@ -29,23 +45,31 @@ namespace G5E1
 
         private void calculate_Button_Click(object sender, EventArgs e)
         {
-            if (job == 0)
+            if (job == 1)
             {
                 discount = salary_base * 0.20;
                 salary = salary_base - discount;
-            }
-            else if (job == 1)
-            {
-                discount = salary_base * 0.15;
-                salary = salary_base - discount;
+                Form2 frm = new Form2(name, salary, discount, job);
+                frm.Show();
             }
             else if (job == 2)
             {
+                discount = salary_base * 0.15;
+                salary = salary_base - discount;
+                Form2 frm = new Form2(name, salary, discount, job);
+                frm.Show();
+            }
+            else if (job == 3)
+            {
                 discount = salary_base * 0.05;
                 salary = salary_base - discount;
+                Form2 frm = new Form2(name, salary, discount, job);
+                frm.Show();
             }
-            Form2 frm = new Form2(name, salary, discount, job);
-            frm.Show();
+            else if (job == 0)
+            {
+                MessageBox.Show("No has seleccionado ningun tipo de posicion laboral.", "Error en el programa...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void usd_Label_Click(object sender, EventArgs e)
@@ -60,7 +84,14 @@ namespace G5E1
 
         private void code_Button_Click(object sender, EventArgs e)
         {
-            System.Diagnostics.Process.Start("https://github.com/Oscar-02/G5E1");
+            try
+            {
+                System.Diagnostics.Process.Start("https://github.com/Oscar-02/G5E1");
+            }
+            catch
+            {
+                MessageBox.Show("Ocurrio un error al redirigir al URL.", "Error en el programa...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void name_Box_TextChanged(object sender, EventArgs e)
@@ -85,7 +116,14 @@ namespace G5E1
 
         private void salary_Box_TextChanged(object sender, EventArgs e)
         {
-            salary_base = double.Parse(salary_Box.Text);
+            try
+            {
+                salary_base = double.Parse(salary_Box.Text);
+            }
+            catch
+            {
+                MessageBox.Show("Has ingresado un valor no valido. Solo ingresa valores numericos.", "Error en el programa...", MessageBoxButtons.OK, MessageBoxIcon.Error);
+            }
         }
 
         private void job_Combo_SelectedIndexChanged(object sender, EventArgs e)
