@@ -1,5 +1,6 @@
 <h1>Guia 5 Ejercicio 1 PE 07L<br>
   Guia 5 Ejercicio 2 PE 07L</h1>
+  <div>👇👇👇👇</div>
 <hr color="red">
 <h2>Componentes del programa.</h2>
 <p>Este programa posee un total de 2 formularios, cada uno con su respectivas lineas de codigo</p><br>
